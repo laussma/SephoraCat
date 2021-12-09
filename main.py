@@ -17,4 +17,4 @@ pipeline.add(filterProhibited)
 pipeline.execute(df)
 
 df.to_csv("data/sephora_filtered.csv")
-print(df)
+#print(df)

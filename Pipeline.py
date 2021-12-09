@@ -1,12 +1,11 @@
-import Filter
-
+from Filter import Filter
 
 class Pipeline:
     def __init__(self):
         print("Initializing pipeline...")
         self.filters = list()
 
-    def add(self, filter: FilterObject.Filter):
+    def add(self, filter: Filter):
         print("Adding filter to pipeline...")
         self.filters.append(filter)
 
