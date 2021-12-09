@@ -1,5 +1,6 @@
 from Filter import Filter
 
+
 class Pipeline:
     def __init__(self):
         print("Initializing pipeline...")
@@ -11,6 +12,9 @@ class Pipeline:
 
     def execute(self, data):
         print("Executing pipeline...")
+
         for filter in self.filters:
+            # could start new thread here
             filter.execute(data)
+
         print("Finished pipeline...")
